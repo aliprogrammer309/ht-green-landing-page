@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.parent-container {
+  background-image: url("../images/bg800bulbs.jpg");
+  background-size: cover;
+  background-color: #554c47;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child-container {
+  width: 75%;
+  /* margin: 0 auto; */
+  background-color: white;
+  margin: 30px 0 30px 0;
+  border-radius: 10px;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links > a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+hr {
+  color: lightgray;
+}
+
+.hero-section > img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.5;
+  /* margin-top: 15px; */
+}
+
+.container section {
+  margin-top: 25px;
+  min-height: 30vh;
+}
+
+.section-with-image {
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.section-with-image img {
+  border-radius: 10px;
+}
+
+.btn-div {
+  margin-bottom: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.back-to-top {
+  min-width: 200px;
+  background-color: lightgray;
+  padding: 15px;
+  border-radius: 25px;
+  border: 1px solid gray;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(227, 113, 46);
+  color: white;
+  font-weight: bold;
+  padding: 0 25px 0 25px;
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px; 
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  border: 1px solid rgb(102, 211, 185);
+  border-left: 10px solid rgb(102, 211, 185);
+  background-color: azure;
+}
+
+.card {
+  padding: 2%;
+}
+
+.card-text {
+  margin-left: 2%;
+  line-height: 1.6;
+}
+
+/* media query for responsivness */
+@media only screen and (max-width: 576px) {
+  .child-container {
+    width: 85%;
+  }
+
+  .section-with-image {
+    flex-direction: column;
+    margin-bottom: 10%;
+  }
+
+  .section-side-image img {
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card-img img {
+    width: 100%;
+  }
+}
